@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('pull'){
             steps {
-                git branch: 'dev', url: 'https://github.com/mayurmwagh/CDEC-B21-Backend.git'
+                git branch: 'dev', url: 'https://github.com/Aamantamboli/Project-backend.git'
             }
         }
         stage ('build'){
