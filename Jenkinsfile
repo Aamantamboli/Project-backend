@@ -16,7 +16,7 @@ pipeline {
                 sh '''
                     docker build . -t aamantamboli/projectbackend:latest 
                     docker push aamantamboli/projectbackend:latest
-                    docker aamantamboli/projectbackend:latest
+                    docker rmi aamantamboli/projectbackend:latest
                     kubectl apply -f ./yaml/
                 '''
             }
