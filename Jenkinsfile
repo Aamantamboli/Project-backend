@@ -2,9 +2,9 @@ pipeline {
     agent any 
     stages {
         stage ('pull'){
-            steps {
-                git branch: 'dev', url: 'https://github.com/Aamantamboli/Project-backend.git'
-            }
+            // steps {
+            //     git branch: 'dev', url: 'https://github.com/Aamantamboli/Project-backend.git'
+            // }
         }
         stage ('build'){
             steps {
