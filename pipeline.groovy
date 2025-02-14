@@ -14,9 +14,9 @@ pipeline {
         stage ('deploy'){
             steps {
                 sh '''
-                    docker build . -t mayurwagh/cdec-b21-backend:latest 
-                    docker push mayurwagh/cdec-b21-backend:latest
-                    docker rmi mayurwagh/cdec-b21-backend:latest
+                    docker build . -t aamantamboli/projecct-backend:latest 
+                    docker push aamantamboli/projecct-backend:latest
+                    docker aamantamboli/projecct-backend:latest
                     kubectl apply -f ./yaml/
                 '''
             }
