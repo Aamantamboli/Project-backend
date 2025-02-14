@@ -14,9 +14,9 @@ pipeline {
         stage ('deploy'){
             steps {
                 sh '''
-                    docker build -t aamantamboli/project-backend:latest .
-                    docker push aamantamboli/project-backend:latest
-                    docker aamantamboli/project-backend:latest
+                    docker build . -t aamantamboli/projectbackend:latest 
+                    docker push aamantamboli/projectbackend:latest
+                    docker aamantamboli/projectbackend:latest
                     kubectl apply -f ./yaml/
                 '''
             }
